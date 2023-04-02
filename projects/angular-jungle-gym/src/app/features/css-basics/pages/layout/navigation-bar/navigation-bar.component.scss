@@ -1,0 +1,42 @@
+header {
+    padding: .8rem 2rem;
+    color: whitesmoke;
+    background-color: #273746;
+    user-select: none;
+}
+
+header > div {
+    display: inline-block;
+    vertical-align: center;
+}
+
+div > a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    padding: 0 1rem;
+    color: rgb(212, 212, 212);
+    display: inline-block;
+    width: calc(100% - 220px);
+    text-align: left;
+    vertical-align: center;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+li > a:hover {
+    padding: 2px 0;
+    color: whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+}

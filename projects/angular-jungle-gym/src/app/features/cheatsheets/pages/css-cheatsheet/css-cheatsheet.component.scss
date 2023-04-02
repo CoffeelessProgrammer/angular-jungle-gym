@@ -1,0 +1,20 @@
+.u-flex {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    section {
+        padding: 0 1.5rem;
+        flex: 0 1 25%;
+    }
+}
+
+.u-list--collapsible {
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+}

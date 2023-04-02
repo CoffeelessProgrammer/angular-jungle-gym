@@ -1,0 +1,71 @@
+<h1>The Box Model</h1>
+
+<section id="block-elements">
+    <h2>Block-level Elements</h2>
+
+    <ul>
+        <li>Block-level elements consist of a box made of 4 parts:</li>
+        <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+            <ul>
+                <li>Margins collapse, i.e. when margins are adjacent, larger value wins.</li>
+            </ul>
+        </ul>
+        <li>Block-level elements take up the full width of their container by default</li>
+    </ul>
+
+    <div id="box-model-demo" style="height: 8rem;">
+        <div class="bg1">
+            <p>The Box Model</p>
+        </div>
+    </div>
+</section>
+
+<section id="properties">
+    <h2>Box Model Properties</h2>
+
+    <ul>
+        <li><strong>padding</strong>: t r b l;</li>
+        <li><strong>margin</strong>: t r b l;</li>
+        <li><strong>border</strong>: 4px solid #2C3E50; (shorthand)</li>
+        <ul>
+            <li>border-width</li>
+            <li>border-style</li>
+            <li>border-color</li>
+        </ul>
+        <li><strong>width</strong> - % is relative to container</li>
+        <li><strong>height</strong> - % is relative to container</li>
+        <li><strong>box-sizing</strong> - determines which parts of the box model are used for width & height calculation of block-level elements</li>
+        <ul>
+            <li>content-box (default)</li>
+            <li>padding-box</li>
+            <li>border-box (recommended)</li>
+        </ul>
+        <li><strong>display</strong> - determines positional behavior of element</li>
+        <ul>
+            <li>block</li>
+            <li>inline</li>
+            <li>inline-block</li>
+            <li>none</li>
+        </ul>
+    </ul>
+</section>
+
+<section id="hiding-elements">
+    <h2><code>visibility: hidden</code> vs. <code>display: none</code></h2>
+
+    <ul>
+        <li>visibility: hidden</li>
+        <ul>
+            <li>Element is still part of document flow and takes its usual space</li>
+        </ul>
+        <li>display: none</li>
+        <ul>
+            <li>Element is no longer part of document flow, i.e. takes no space</li>
+        </ul>
+        <li>In both cases, the element is <em>still part of the DOM</em>.</li>
+    </ul>
+</section>

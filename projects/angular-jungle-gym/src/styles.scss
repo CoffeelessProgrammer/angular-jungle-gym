@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* -------------- CSS Reset -------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+summary {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+
+  :hover() {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* -------------- Debugging Classes -------------- */
+.bg1 {
+  background-color: olivedrab;
+}
+
+.bg2 {
+  background-color: rebeccapurple;
+}
+
+.bg3 {
+  background-color: chocolate;
+}
+
+.bg4 {
+  background-color: darkcyan;
+}
+
+.bg5 {
+  background-color: orchid;
+}
+
+.bg6 {
+  background-color: crimson;
+}
+
+.bg7 {
+  background-color: forestgreen;
+}
+
+/* -------------- Main CSS Begins -------------- */
+
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }

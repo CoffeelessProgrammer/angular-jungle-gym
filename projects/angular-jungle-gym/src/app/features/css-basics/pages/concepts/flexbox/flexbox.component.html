@@ -1,0 +1,67 @@
+<h1>Flexbox</h1>
+
+Most useful when you want the layout to fit your content.
+
+<section id="links">
+    <h2>Useful Links</h2>
+
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow" target="_blank">flex-flow | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap" target="_blank">gap | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank">justify-content | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank">align-items | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">flex-* | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap" target="_blank">gap | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Flexbox Basics | MDN</a></li>
+    </ul>
+</section>
+
+<section id="container">
+    <h2>Container & Axes</h2>
+
+    <ul>
+        <li>Put a container around the elements to control, and set <strong>display</strong> property on container to <code>flex</code>.</li>
+        <li>Flexbox only applies to direct children of the container.</li>
+        <li><strong>flex-flow</strong> – shorthand for flex-direction & flex-wrap</li>
+        <ul>
+            <li><strong>flex-direction</strong> determines the direction of the Main and Cross axes.</li>
+            <ul>
+                <li><u>Values:</u> row, column, row-reverse, column-reverse</li>
+                <li>Main axis is the direction of flex flow, i.e. horizontal if row, else vertical</li>
+                <li>Cross axis is perpendicular to the Main axis</li>
+            </ul>
+            <li><strong>flex-wrap</strong> determines how to handle overflow, i.e. whether flex items should wrap on Cross axis</li>
+            <ul>
+                <li><u>Values:</u> nowrap, wrap, wrap-reverse</li>
+            </ul>
+        </ul>
+        <li><strong>justify-content</strong> – children spacing along Main axis</li>
+        <ul>
+            <li><u>Values:</u> flex-start, flex-end, center, space-between, space-around</li>
+        </ul>
+        <li><strong>align-items</strong> – children spacing along Cross axis</li>
+        <ul>
+            <li><u>Values:</u> flex-start, flex-end, center</li>
+        </ul>
+        <li><strong>align-content</strong> – spacing of multiple lines, i.e. w/ flex-wrap</li>
+        <ul>
+            <li><u>Values:</u> flex-start, flex-end, center, space-between, space-around</li>
+        </ul>
+    </ul>
+</section>
+
+
+<section id="flex-items">
+    <h2>Flex Item Manipulation</h2>
+
+    <ul>
+        <li><strong>flex</strong> – [flex-grow] [flex-shrink] [flex-basis]; (shorthand)</li>
+        <ul>
+            <li><strong title="default: 0">flex-grow</strong> – ratio at which to distribute leftover space in container b/w items</li>
+            <li><strong title="default: 1">flex-shrink</strong> – ratio at which items shrink on smaller screens; 0 disables shrinking</li>
+            <li><strong title="default: auto">flex-basis</strong> – similar to width</li>
+        </ul>
+        <li><strong title="default: 0">order</strong></li>
+        <li><strong>align-self</strong> – override container-level align-items for specific child item</li>
+    </ul>
+</section>

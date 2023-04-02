@@ -1,0 +1,14 @@
+$color-primary: #BE1212;
+
+main {
+    margin: 0 1rem;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+li > a:hover {
+    color: $color-primary;
+    text-decoration: underline;
+}

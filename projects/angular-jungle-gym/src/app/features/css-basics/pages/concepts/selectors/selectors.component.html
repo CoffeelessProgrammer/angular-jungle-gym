@@ -1,0 +1,83 @@
+<h1>CSS Selectors</h1>
+
+<section id="links">
+    <h2>Useful Links</h2>
+
+    <ul>
+        <li><a href="https://web.dev/learn/css/selectors/" target="_blank">CSS Selectors | Web.dev</a></li>
+        <li><a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank">CSS Selectors Reference | W3Schools</a></li>
+        <li><a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">HTML Elements Reference by Category | W3Schools</a></li>
+        <li><a href="https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/" target="_blank">CSS Selectors for Beginners | FreeCodeCamp</a></li>
+    </ul>
+</section>
+
+<section id="core-selectors">
+    <h2>Core Selectors</h2>
+    
+    <ul>
+        <li><strong>Classes (.)</strong></li>
+        <ul>
+            <li>CSS - Start with a period, e.g. <code>.blog-post-heading</code></li>
+            <li>HTML - Specified in <code>class</code> attribute, e.g. <code>class="blog-post-heading"</code></li>
+            <li>Apply multiple classes to a single element via space separation</li>
+            <li>Each class can applied to multiple elements</li>
+        </ul>
+        <li><strong>IDs (#)</strong></li>
+        <ul>
+            <li>CSS - Start with a hash symbol, e.g. <code>#blog-post-heading</code></li>
+            <li>HTML - Specified in <code>id</code> attribute, e.g. <code>id="blog-post-heading"</code></li>
+            <li>Applied to single element with id</li>
+        </ul>
+        <li><strong>Attributes ([...])</strong></li>
+        <ul>
+            <li>CSS - Enclose HTML attribute with square brackets, e.g. <code>[disabled]</code></li>
+            <li>HTML - Attribute on HTML element, e.g. <code>&lt;button disabled&gt;Next&lt;/button&gt;</code></li>
+        </ul>
+        <li><strong>Elemental</strong></li>
+        <ul>
+            <li>Selects all instances of an HTML element/tag, e.g. <code>h1, p, div</code></li>
+            <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank">HTML Elements Reference | W3Schools</a></li>
+        </ul>
+        <li><strong>Universal (*)</strong> - Selects all elements; useful for CSS resets</li>
+    </ul>
+</section>
+
+<section id="combinators">
+    <h2>Combinators</h2>
+
+    <ul>
+        <li><strong>Descendant (&nbsp;)</strong></li>
+        <ul>
+            <li>Second element is a descendant (child) of first element, e.g.</li>
+            <li><code>nav li &lcub; ... &rcub;</code> - selects all list elements which have a &lt;nav&gt; parent in their hierarchy</li>
+        </ul>
+        <li><strong>Child (&gt;)</strong></li>
+        <ul>
+            <li>Second element is a <em>direct</em> child of first element, e.g.</li>
+            <li><code>nav > a &lcub; ... &rcub;</code> - selects all anchor tags which have a &lt;nav&gt; parent</li>
+        </ul>
+        <li><strong>General Sibling (~)</strong></li>
+        <ul>
+            <li>Second element comes after first element and shares the same parent, e.g.</li>
+            <li><code>h4 + p &lcub; ... &rcub;</code> - selects all paragraphs which follow an h4 tag on the same hierachy level</li>
+        </ul>
+        <li><strong>Adjacent Sibling (+)</strong></li>
+        <ul>
+            <li>Second element comes <em>immediately</em> after first element (same parent), e.g.</li>
+            <li><code>h3 + p &lcub; ... &rcub;</code> - selects paragraphs which directly follow an h3 tag</li>
+        </ul>
+    </ul>
+</section>
+
+<section id="precedence">
+    <h2>Selector Precedence (Specificity)</h2>
+
+    <ol>
+        <li>Inline styles</li>
+        <li>#id</li>
+        <li>.class, :pseudo-class, [attribute]</li>
+        <li>&lt;tag&gt;, ::pseudo-element</li>
+    </ol>
+
+    <p>Elements also inherit certain properties from parent elements (low specificity), e.g. text elements inherit <code>font-family</code> from &lt;body&gt;. Inheritance is easily overridden.</p>
+</section>

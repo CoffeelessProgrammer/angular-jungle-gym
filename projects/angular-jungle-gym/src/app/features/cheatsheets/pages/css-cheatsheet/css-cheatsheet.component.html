@@ -1,0 +1,186 @@
+<h1>CSS Cheatsheet</h1>
+
+<nav>
+    <ul>
+        <li><a [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLink]="['/cheatsheets', 'html']">HTML Cheatsheet</a></li>
+    </ul>
+</nav>
+
+<section id="properties">
+    <h2>CSS Properties</h2>
+    <div class="u-flex">
+        <section id="core">
+            <h3>Core Properties</h3>
+            <ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">margin</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">border</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">padding</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">width</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">height</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-align</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">vertical-align</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">visibility</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">display</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">box-sizing</a>
+                </li>
+            </ul>
+        </section>
+        <section id="font">
+            <h3>Font Properties</h3>
+            <ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">color</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">font</a>
+                </li>
+                <ul>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">font-family</a>
+                    </li>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">font-size</a>
+                    </li>
+                    <li title="e.g. bold, 700">
+                        <a class="cheatsheet__anchor--mdn-css-property">font-weight</a>
+                    </li>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">font-style</a>
+                    </li>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">font-variant</a>
+                    </li>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">font-stretch</a>
+                    </li>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">line-height</a>
+                    </li>
+                </ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-decoration</a>
+                </li>
+            </ul>
+        </section>
+        <section id="layout">
+            <h3>Layout Properties</h3>
+            <ul class="u-list--collapsible">
+                <li>
+                    <details open>
+                        <summary>Flexbox</summary>
+                        <ul>
+                            <li>Container</li>
+                            <ul>
+                                <li><code>display: flex</code></li>
+                                <li>
+                                    <a class="cheatsheet__anchor--mdn-css-property">flex-flow</a>
+                                </li>
+                                <ul>
+                                    <li>
+                                        <a class="cheatsheet__anchor--mdn-css-property">flex-direction</a>
+                                    </li>
+                                    <li>
+                                        <a class="cheatsheet__anchor--mdn-css-property">flex-wrap</a>
+                                    </li>
+                                </ul>
+                                <li>
+                                    <a class="cheatsheet__anchor--mdn-css-property">justify-content</a>
+                                </li>
+                                <li>
+                                    <a class="cheatsheet__anchor--mdn-css-property">align-items</a>
+                                </li>
+                                <li>
+                                    <a class="cheatsheet__anchor--mdn-css-property">align-content</a>
+                                </li>
+                            </ul>
+                            <li>Items</li>
+                            <ul>
+                                <li title="shorthand for [grow] [shrink] [basis];">
+                                    <a class="cheatsheet__anchor--mdn-css-property">flex</a>
+                                </li>
+                                <ul>
+                                    <li title="default: 0">
+                                        <a class="cheatsheet__anchor--mdn-css-property">flex-grow</a>
+                                    </li>
+                                    <li title="default: 1">
+                                        <a class="cheatsheet__anchor--mdn-css-property">flex-shrink</a>
+                                    </li>
+                                    <li title="default: auto">
+                                        <a class="cheatsheet__anchor--mdn-css-property">flex-basis</a>
+                                    </li>
+                                </ul>
+                                <li title="default: 0">
+                                    <a class="cheatsheet__anchor--mdn-css-property">order</a>
+                                </li>
+                                <li title="override container-level align-items for specific child item">
+                                    <a class="cheatsheet__anchor--mdn-css-property">align-self</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Grid</summary>
+                        <ul>
+                            <li><em>Under Construction</em></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </section>
+    </div>
+</section>
+<section id="syntax">
+    <h2>Language Syntax</h2>
+    <div class="u-flex">
+        <section id="css">
+            <h3>CSS Tips</h3>
+            <ul class="u-list--collapsible">
+                <li><details>
+                    <summary>Variables</summary>
+                    <ul>
+                        <li><pre><code>:root &#123;
+    --fs-h1: 2rem;
+    --c-black: #273746;
+&#125;
+
+@media(min-width: 800px) &#123;
+    :root &#123;
+        --fs-h1: 3rem;
+    &#125;
+&#125;
+
+h1 &#123;
+    font-size: var(--fs-h1);
+&#125;
+                        </code></pre></li>
+                    </ul>
+                </details></li>
+            </ul>
+        </section>
+        <section id="sass">
+            <h3>SCSS Tips</h3>
+        </section>
+    </div>
+</section>

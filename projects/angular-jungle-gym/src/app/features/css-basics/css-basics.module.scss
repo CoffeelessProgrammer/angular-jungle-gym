@@ -1,0 +1,49 @@
+$color-primary: #4f5d2f;
+$color-secondary: #423629;
+$color-dark-gray: #7d7e75;
+$color-gray: #b0b2b8;
+$color-light-gray: #cfd6ea;
+
+
+::selection { 
+    color: whitesmoke;
+    background-color: $color-dark-gray;
+}
+
+li > a:hover {
+    color: $color-primary;
+    text-decoration: underline;
+}
+
+section:not(#links) li:active, p:active {
+    background-color: $color-light-gray;
+}
+
+/* -------------- Debugging Classes -------------- */
+.bg1 {
+    background-color: olivedrab;
+  }
+  
+  .bg2 {
+    background-color: rebeccapurple;
+  }
+  
+  .bg3 {
+    background-color: chocolate;
+  }
+  
+  .bg4 {
+    background-color: darkcyan;
+  }
+  
+  .bg5 {
+    background-color: orchid;
+  }
+  
+  .bg6 {
+    background-color: crimson;
+  }
+  
+  .bg7 {
+    background-color: forestgreen;
+  }
