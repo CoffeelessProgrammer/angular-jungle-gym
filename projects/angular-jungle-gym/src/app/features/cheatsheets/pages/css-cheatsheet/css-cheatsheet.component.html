@@ -4,6 +4,8 @@
     <ul>
         <li><a [routerLink]="['/home']">Home</a></li>
         <li><a [routerLink]="['/cheatsheets', 'html']">HTML Cheatsheet</a></li>
+        <li><a [routerLink]="['/cheatsheets', 'js']">JS Cheatsheet</a></li>
+        <li><a [routerLink]="['/cheatsheets', 'angular']">Angular Cheatsheet</a></li>
     </ul>
 </nav>
 
@@ -11,17 +13,8 @@
     <h2>CSS Properties</h2>
     <div class="u-flex">
         <section id="core">
-            <h3>Core Properties</h3>
+            <h3>Core</h3>
             <ul>
-                <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">margin</a>
-                </li>
-                <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">border</a>
-                </li>
-                <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">padding</a>
-                </li>
                 <li>
                     <a class="cheatsheet__anchor--mdn-css-property">width</a>
                 </li>
@@ -29,69 +22,206 @@
                     <a class="cheatsheet__anchor--mdn-css-property">height</a>
                 </li>
                 <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">text-align</a>
+                    <a class="cheatsheet__anchor--mdn-css-property">margin-block</a>
                 </li>
                 <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">vertical-align</a>
+                    <a class="cheatsheet__anchor--mdn-css-property">margin-inline</a>
+                </li>
+                <li title="margin: 0 auto; - centers child element horizontally; Keep in Mind - adjacent margins collapse">
+                    <a class="cheatsheet__anchor--mdn-css-property">margin</a>
                 </li>
                 <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">visibility</a>
+                    <a class="cheatsheet__anchor--mdn-css-property">padding</a>
                 </li>
                 <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">display</a>
+                    <details>
+                        <summary><a class="cheatsheet__anchor--mdn-css-property">border</a></summary>
+                        <ul>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">border-color</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">border-style</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">border-width</a>
+                            </li>
+                        </ul>
+                    </details>
                 </li>
                 <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">box-sizing</a>
+                    <a class="cheatsheet__anchor--mdn-css-property">border-radius</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">box-shadow</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">filter</a>
+                </li>
+                <li title="background: url(&#34;sample.jpg&#34;) left 10% bottom 20%/cover no-repeat border-box scroll;">
+                    <details>
+                        <summary><a class="cheatsheet__anchor--mdn-css-property">background</a></summary>
+                        <ul>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">background-image</a>
+                            </li>
+                            <li title="cover (useful); when using numerical values, first is width, then height (auto by default)">
+                                <a class="cheatsheet__anchor--mdn-css-property">background-size</a>
+                            </li>
+                            <li title="For controlling image cropping; center (useful)">
+                                <a class="cheatsheet__anchor--mdn-css-property">background-position</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">background-attachment</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">background-repeat</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">background-color</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">background-origin</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">background-clip</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">background-blend-mode</a>
+                </li>
+            </ul>
+            <h3>Functions</h3>
+            <ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">url</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">linear-gradient</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">radial-gradient</a>
+                </li>
+            </ul>
+        </section>
+        <section id="tag-specific">
+            <h3>Tag-specific</h3>
+            <ul>
+                <li>
+                    <details>
+                        <summary><a class="cheatsheet__anchor--mdn-css-property">list-style</a></summary>
+                        <ul>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">list-style-image</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">list-style-position</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">list-style-type</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><a class="cheatsheet__anchor--mdn-css-property">outline</a></summary>
+                        <ul>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">outline-color</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">outline-style</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">outline-width</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">outline-offset</a>
                 </li>
             </ul>
         </section>
         <section id="font">
-            <h3>Font Properties</h3>
+            <h3>Font/Text</h3>
             <ul>
                 <li>
                     <a class="cheatsheet__anchor--mdn-css-property">color</a>
                 </li>
                 <li>
-                    <a class="cheatsheet__anchor--mdn-css-property">font</a>
+                    <details>
+                        <summary><a class="cheatsheet__anchor--mdn-css-property">font</a></summary>
+                        <ul>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">font-family</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">font-size</a>
+                            </li>
+                            <li title="e.g. bold, 700">
+                                <a class="cheatsheet__anchor--mdn-css-property">font-weight</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">font-style</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">font-variant</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">font-stretch</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">line-height</a>
+                            </li>
+                        </ul>
+                    </details>
                 </li>
-                <ul>
-                    <li>
-                        <a class="cheatsheet__anchor--mdn-css-property">font-family</a>
-                    </li>
-                    <li>
-                        <a class="cheatsheet__anchor--mdn-css-property">font-size</a>
-                    </li>
-                    <li title="e.g. bold, 700">
-                        <a class="cheatsheet__anchor--mdn-css-property">font-weight</a>
-                    </li>
-                    <li>
-                        <a class="cheatsheet__anchor--mdn-css-property">font-style</a>
-                    </li>
-                    <li>
-                        <a class="cheatsheet__anchor--mdn-css-property">font-variant</a>
-                    </li>
-                    <li>
-                        <a class="cheatsheet__anchor--mdn-css-property">font-stretch</a>
-                    </li>
-                    <li>
-                        <a class="cheatsheet__anchor--mdn-css-property">line-height</a>
-                    </li>
-                </ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-emphasis</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-indent</a>
+                </li>
                 <li>
                     <a class="cheatsheet__anchor--mdn-css-property">text-decoration</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-shadow</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-transform</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">text-orientation</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">letter-spacing</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">word-spacing</a>
                 </li>
             </ul>
         </section>
         <section id="layout">
-            <h3>Layout Properties</h3>
-            <ul class="u-list--collapsible">
+            <h3>Layout</h3>
+            <ul>
                 <li>
-                    <details open>
+                    <a class="cheatsheet__anchor--mdn-css-property">display</a>
+                </li>
+                <li>
+                    <details>
                         <summary>Flexbox</summary>
                         <ul>
                             <li>Container</li>
                             <ul>
                                 <li><code>display: flex</code></li>
+                                <li>
+                                    <a class="cheatsheet__anchor--mdn-css-property">gap</a>
+                                </li>
                                 <li>
                                     <a class="cheatsheet__anchor--mdn-css-property">flex-flow</a>
                                 </li>
@@ -143,9 +273,156 @@
                     <details>
                         <summary>Grid</summary>
                         <ul>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">gap</a>
+                            </li>
                             <li><em>Under Construction</em></li>
                         </ul>
                     </details>
+                </li>
+                <li title="Aligns inline & inline-block elements in container">
+                    <a class="cheatsheet__anchor--mdn-css-property">text-align</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">vertical-align</a>
+                </li>
+                <li title="Can be useful for positioning image w/ adjacent text">
+                    <a class="cheatsheet__anchor--mdn-css-property">float</a>
+                </li>
+                <li title="Use to clear floats, i.e. .clearfix { clear: both; }">
+                    <a class="cheatsheet__anchor--mdn-css-property">clear</a>
+                </li>
+            </ul>
+
+            <h3>Positioning</h3>
+            <ul>
+                <li title="relative (acts as parent), absolute (relative to closest ancestor w/ non-static position in hierarchy), fixed, sticky, static (default)">
+                    <details>
+                        <summary><a class="cheatsheet__anchor--mdn-css-property">position</a></summary>
+                        <ul title="These properties are relative to viewport">
+                            <li title="Relative to top of viewport">
+                                <a class="cheatsheet__anchor--mdn-css-property">top</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">right</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">bottom</a>
+                            </li>
+                            <li>
+                                <a class="cheatsheet__anchor--mdn-css-property">left</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li title="Used to hide elements positioned outside parent; apply value hidden to parent">
+                    <a class="cheatsheet__anchor--mdn-css-property">overflow</a>
+                </li>
+                <li title="Only works for elements with non-static position">
+                    <a class="cheatsheet__anchor--mdn-css-property">z-index</a>
+                </li>
+            </ul>
+        </section>
+        <section id="misc-properties">
+            <h3>Miscellaneous</h3>
+            <ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">cursor</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">overflow</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">mask</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">backdrop-filter</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">visibility</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">box-sizing</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</section>
+<section id="pseudo">
+    <h2>Pseudo-Elements/Classes</h2>
+    <div class="u-flex">
+        <section id="pseudo-elements">
+            <h3>Pseudo-elements</h3>
+            <ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">::before</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">::after</a>
+                </li>
+                <ul>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">content</a>
+                    </li>
+                </ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">::selection</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">::marker</a>
+                </li>
+                <li><details><summary>Scrollbar (non-standard)</summary>
+                    <ul>
+                        <li>
+                            <a class="cheatsheet__anchor--mdn-css-property">::-webkit-scrollbar</a>
+                        </li>
+                        <li>::-webkit-scrollbar-track</li>
+                        <li>::-webkit-scrollbar-thumb</li>
+                        <li>::-webkit-scrollbar-thumb:hover</li>
+                        <li>::-webkit-scrollbar-button</li>
+                    </ul>
+                </details></li>
+            </ul>
+        </section>
+        <section id="pseudo-classes">
+            <h3>Pseudo-classes</h3>
+            <ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:is</a>
+                </li>
+                <li title="Useful for slecting parent of an element, e.g. li:has(> details) { ... }">
+                    <a class="cheatsheet__anchor--mdn-css-property">:has</a>
+                </li>
+                <ul>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">outline</a>
+                    </li>
+                </ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:not</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:nth-child</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:checked</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:focus</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:hover</a>
+                </li>
+                <ul>
+                    <li>
+                        <a class="cheatsheet__anchor--mdn-css-property">cursor</a>
+                    </li>
+                </ul>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:active</a>
+                </li>
+                <li>
+                    <a class="cheatsheet__anchor--mdn-css-property">:visited</a>
                 </li>
             </ul>
         </section>
@@ -157,8 +434,7 @@
         <section id="css">
             <h3>CSS Tips</h3>
             <ul class="u-list--collapsible">
-                <li><details>
-                    <summary>Variables</summary>
+                <li><details><summary>Variables</summary>
                     <ul>
                         <li><pre><code>:root &#123;
     --fs-h1: 2rem;
@@ -183,4 +459,13 @@ h1 &#123;
             <h3>SCSS Tips</h3>
         </section>
     </div>
+</section>
+
+<section id="links">
+    <h2>Useful Links</h2>
+    <ul>
+        <li *ngFor="let link of cheatsheet.usefulLinks">
+            <a [href]="link.url" target="_blank">{{ link.title }}</a>
+        </li>
+    </ul>
 </section>

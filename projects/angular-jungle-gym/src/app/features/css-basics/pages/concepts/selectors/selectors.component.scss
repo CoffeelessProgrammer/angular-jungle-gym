@@ -1,4 +1,4 @@
-@import '../../../css-basics.module.scss';
+@use '../../../styles/_css-basics.module';
 
 ul > ul {
     margin: 0 0 .5rem 0;

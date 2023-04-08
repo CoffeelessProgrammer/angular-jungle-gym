@@ -1,0 +1,16 @@
+{
+    "usefulLinks": [
+        {
+            "title": "ES6 Cheatsheet | DevHints",
+            "url": "https://devhints.io/es6"
+        },
+        {
+            "title": "Canvas Cheatsheet | DevHints",
+            "url": "https://devhints.io/canvas"
+        },
+        {
+            "title": "Speech Synthesis Cheatsheet | DevHints",
+            "url": "https://devhints.io/js-speech"
+        }
+    ]
+}

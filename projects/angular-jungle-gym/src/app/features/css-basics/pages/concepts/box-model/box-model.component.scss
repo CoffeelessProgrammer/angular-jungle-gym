@@ -1,4 +1,4 @@
-@import '../../../css-basics.module.scss';
+@use '../../../styles/css-basics.module';
 
 #box-model-demo {
     display: flex;
