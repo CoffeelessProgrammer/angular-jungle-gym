@@ -9,11 +9,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'web-dev-reference', component: WebDevReferenceSheetComponent },
   {
-    path: 'cheatsheets',
-    loadChildren: () =>
-      import('./features/cheatsheets/cheatsheets.module').then((m) => m.CheatsheetsModule)
-  },
-  {
     path: 'css-basics',
     loadChildren: () =>
       import('./features/css-basics/css-basics.module').then((m) => m.CssBasicsModule)

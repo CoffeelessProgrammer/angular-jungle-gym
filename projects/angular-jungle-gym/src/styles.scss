@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* -------------- CSS Reset -------------- */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -21,7 +23,7 @@ a {
   text-decoration: none;
   background-color: transparent;
 
-  &:hover() {
+  &:hover {
     color: inherit;
     text-decoration: none;
   }
@@ -66,9 +68,13 @@ ul {
 
 li:has(> details) {
     list-style-type: none;
-    margin-left: -18px;
+    margin-left: -1rem;
+
+    &::marker {
+      margin-left: -10px;
+    }
 }
 
-li:has(> details[open]) {
-  margin-left: -20px;
+li:has(> details[open])::marker {
+  margin-left: 0;
 }
