@@ -17,9 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "dist/angular-jungle-gym"
-            },
+            "outputPath": "dist/angular-jungle-gym",
             "index": "projects/angular-jungle-gym/src/index.html",
             "polyfills": [
               "zone.js"

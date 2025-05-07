@@ -19,6 +19,11 @@ fnm list
 fnm use <version>
 fnm uninstall <version>
 ```
+- In ~/.bashrc:
+  - `eval "$(fnm env --use-on-cd --shell bash)"`
+- In Powershell $PROFILE:
+  - `fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression`
+- [fnm | Github](https://github.com/Schniz/fnm)
 
 ## Code scaffolding
 
