@@ -21,7 +21,7 @@
             import { provideHttpClient } from '@angular/common/http';
             @NgModule({ providers: [ provideHttpClient() ] })
             ```
-        - **!REF** https://medium.com/@assiljanbeih/httpclientmodule-deprecated-angular-18-843832c663dc
+    - **!REF** https://medium.com/@assiljanbeih/httpclientmodule-deprecated-angular-18-843832c663dc
 
 1. **Context:** Upgrading to Angular 17<br>**Error:** ./src/polyfills.ts:53:0-27 - Error: Module not found: Error: Package path ./dist/zone is not exported from package ~\\...\project\node_modules\zone.js <br>(see exports field in ~\\...\project\node_modules\zone.js\package.json)
     - Issue in polyfills.ts, `import 'zone.js/dist/zone';  // Included with Angular CLI.`
