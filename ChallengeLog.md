@@ -55,3 +55,6 @@
 1. **Context:** SITUATION<br>**Error:** ERROR_MESSAGE
 1. **Context:** SITUATION<br>**Error:** ERROR_MESSAGE
 
+### To Investigate
+- Application projects that are using the '@angular-devkit/build-angular' package's 'browser' and/or 'browser-esbuild' builders will be migrated to use the new 'application' builder - https://angular.dev/tools/cli/build-system-migration
+    - The output location of the browser build has been updated from "dist/angular-jungle-gym" to "dist/angular-jungle-gym/browser". You might need to adjust your deployment pipeline or, as an alternative, set outputPath.browser to "" in order to maintain the previous functionality.

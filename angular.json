@@ -15,11 +15,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-jungle-gym",
+            "outputPath": {
+              "base": "dist/angular-jungle-gym"
+            },
             "index": "projects/angular-jungle-gym/src/index.html",
-            "main": "projects/angular-jungle-gym/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -32,7 +33,8 @@
             "styles": [
               "projects/angular-jungle-gym/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "projects/angular-jungle-gym/src/main.ts"
           },
           "configurations": {
             "production": {
@@ -51,9 +53,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
