@@ -16,7 +16,6 @@ import { BrowserModule } from '@angular/platform-browser';
   ]
 })
 export class CoreModule {
-
   constructor(@Optional() @SkipSelf() core:CoreModule ){
     if (core) {
       throw new Error("Import core module ONLY in the root (app) module")

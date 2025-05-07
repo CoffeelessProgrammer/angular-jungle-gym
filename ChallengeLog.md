@@ -42,7 +42,7 @@
       You can remove the tilde and use a relative path to reference it, which should remove this error.<br>
       Preprocessor stylesheets may not show the exact file location of the error.
     - **Solution:** Direct pathing under `/assets` is possible for `url()`. Answer given by MS Copilot :exploding_head:
-    - **!REF** Only refer to @import, not url()...
+    - **!REF**
         - https://stackoverflow.com/questions/71081883/angular-scss-url-cant-resolve-relative-path-when-project-is-build
         - https://github.com/angular/angular-cli/issues/28638
         - https://stackoverflow.com/questions/70082698/tilde-in-scss-use-statement-no-longer-resolving-to-node-modules-as-of-angular
